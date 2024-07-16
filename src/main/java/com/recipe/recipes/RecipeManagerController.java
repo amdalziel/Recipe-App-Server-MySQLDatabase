@@ -46,11 +46,11 @@ public class RecipeManagerController {
         return recipeManagerService.searchRecipeManagerByUserIngredients(userId);
     }
 
-//    @GetMapping("recipe/noCommonAllergens")
-//    public List<Recipe> searchForRecipesWithoutCommonAllergens() {
-//
-//        return recipeManagerService.searchRecipeManagerForNoCommonAllergens();
-//    }
+    @GetMapping("recipe/noCommonAllergens")
+    public List<Recipe> searchForRecipesWithoutCommonAllergens() {
+
+        return recipeManagerService.searchRecipeManagerForNoCommonAllergens();
+    }
 
 
     @PostMapping("/newRecipe")

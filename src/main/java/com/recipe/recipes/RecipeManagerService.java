@@ -45,6 +45,11 @@ public class RecipeManagerService {
 
         recipe.setIngredients(persistedIngredients);
 
+        for (Ingredient ingredient : persistedIngredients) {
+            if (ingredient.getCommonAllergen() == true) {
+                recipe.setContainsCommonAllergens(true);
+            }
+        }
         return recipeRepository.save(recipe);
     }
 
@@ -74,8 +79,8 @@ public class RecipeManagerService {
         return recipeRepository.findByName(recipeName);
     }
 
-//    public List<Recipe> searchRecipeManagerForNoCommonAllergens() {
-//        return recipeRepository.findRecipesWithNoCommonAllergens();
-//    }
+    public List<Recipe> searchRecipeManagerForNoCommonAllergens() {
+            return recipeRepository.findByContainsCommonAllergensFalse();
+    }
 }
 

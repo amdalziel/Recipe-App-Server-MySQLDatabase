@@ -2,6 +2,7 @@ package com.recipe.recipes;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -12,19 +13,14 @@ public class Recipe {
     @GeneratedValue(generator = "recipe_sequence")
     private long id;
 
-
     private String name;
 
-    @ManyToMany
-    @JoinTable(
-            name = "recipe_ingredient",
-            joinColumns = @JoinColumn(name = "recipe_id"),
-            inverseJoinColumns = @JoinColumn(name = "ingredient_id")
-    )
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Ingredient> ingredients;
 
     private String instructions;
     private int difficulty;
+    private boolean containsCommonAllergens;
 
     public Recipe() {
     }
@@ -34,6 +30,7 @@ public class Recipe {
         this.ingredients = ingredients;
         this.instructions = instructions;
         this.difficulty = difficulty;
+        this.containsCommonAllergens = false;
     }
 
     public String getName() {
@@ -45,7 +42,7 @@ public class Recipe {
     }
 
     public List<Ingredient> getIngredients() {
-        return ingredients;
+        return this.ingredients;
     }
 
     public void setIngredients(List<Ingredient> ingredients) {
@@ -53,7 +50,7 @@ public class Recipe {
     }
 
     public String getInstructions() {
-        return instructions;
+        return this.instructions;
     }
 
     public void setInstructions(String instructions) {
@@ -61,11 +58,19 @@ public class Recipe {
     }
 
     public int getDifficulty() {
-        return difficulty;
+        return this.difficulty;
     }
 
     public void setDifficulty(int difficulty) {
         this.difficulty = difficulty;
+    }
+
+    public boolean isContainsCommonAllergens() {
+        return this.containsCommonAllergens;
+    }
+
+    public void setContainsCommonAllergens(boolean containsCommonAllergens) {
+        this.containsCommonAllergens = containsCommonAllergens;
     }
 
     @Override
@@ -74,7 +79,8 @@ public class Recipe {
                 "name='" + name + '\'' +
                 ", ingredients=" + ingredients +
                 ", instructions='" + instructions + '\'' +
-                ", difficulty='" + difficulty + '\'' +
+                ", difficulty=" + difficulty +
+                ", containsCommonAllergens=" + containsCommonAllergens +
                 '}';
     }
 
@@ -85,16 +91,20 @@ public class Recipe {
 
         Recipe recipe = (Recipe) o;
 
+        if (containsCommonAllergens != recipe.containsCommonAllergens) return false;
         if (name != null ? !name.equals(recipe.name) : recipe.name != null) return false;
         if (ingredients != null ? !ingredients.equals(recipe.ingredients) : recipe.ingredients != null) return false;
         return instructions != null ? instructions.equals(recipe.instructions) : recipe.instructions == null;
     }
+
 
     @Override
     public int hashCode() {
         int result = name != null ? name.hashCode() : 0;
         result = 31 * result + (ingredients != null ? ingredients.hashCode() : 0);
         result = 31 * result + (instructions != null ? instructions.hashCode() : 0);
+        result = 31 * result + (containsCommonAllergens ? 1 : 0);
         return result;
     }
+
 }

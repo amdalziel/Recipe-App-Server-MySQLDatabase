@@ -13,10 +13,9 @@ public interface RecipeRepository extends CrudRepository<Recipe, Long> {
     public Recipe findByName(String name);
 
     @Query("SELECT r FROM Recipe r JOIN r.ingredients i WHERE i.name IN :ingredientNames")
-    List<Recipe> findRecipesByIngredientNames(@Param("ingredientNames") List<String> ingredientNames);
+    public List<Recipe> findRecipesByIngredientNames(@Param("ingredientNames") List<String> ingredientNames);
 
-//    @Query("SELECT r FROM Recipe r JOIN r.ingredients i GROUP BY r.id HAVING SUM(CASE WHEN i.commonAllergen = true THEN 1 ELSE 0 END) = 0")
-//    List<Recipe> findRecipesWithNoCommonAllergens();
+    public List<Recipe> findByContainsCommonAllergensFalse();
 
 
 }
