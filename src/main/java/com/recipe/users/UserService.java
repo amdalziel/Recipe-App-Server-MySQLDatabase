@@ -1,7 +1,7 @@
 package com.recipe.users;
 
-import com.recipe.recipes.Ingredient;
-import com.recipe.recipes.IngredientRepository;
+import com.recipe.ingredients.Ingredient;
+import com.recipe.ingredients.IngredientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

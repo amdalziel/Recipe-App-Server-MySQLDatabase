@@ -1,8 +1,8 @@
 package com.recipe.recipes;
 
+import com.recipe.ingredients.Ingredient;
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity

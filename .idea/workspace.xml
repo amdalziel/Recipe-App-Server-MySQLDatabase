@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb01bbec-1f0c-4d60-b88a-e6e6bbf97413" name="Changes" comment="All methods working except findRecipesByIngredientNames">
+    <list default="true" id="bb01bbec-1f0c-4d60-b88a-e6e6bbf97413" name="Changes" comment="All methods working!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/ingredients/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/IngredientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/ingredients/IngredientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/ingredients/IngredientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/IngredientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/ingredients/IngredientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeManagerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/users/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +48,11 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.recipe.ingredients" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,12 +78,21 @@
       <option name="project" value="LOCAL" />
       <updated>1721091882747</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="All methods working!">
+      <option name="closed" value="true" />
+      <created>1721133460285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721133460285</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Controller working for Ingredient and RecipeManager (except user ingredient searches)" />
     <MESSAGE value="All methods working except findRecipesByIngredientNames" />
-    <option name="LAST_COMMIT_MESSAGE" value="All methods working except findRecipesByIngredientNames" />
+    <MESSAGE value="All methods working!" />
+    <option name="LAST_COMMIT_MESSAGE" value="All methods working!" />
   </component>
 </project>

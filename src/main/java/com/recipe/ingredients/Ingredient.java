@@ -1,7 +1,4 @@
-package com.recipe.recipes;
-
-import java.sql.Array;
-import java.util.Arrays;
+package com.recipe.ingredients;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,4 @@
-package com.recipe.recipes;
+package com.recipe.ingredients;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

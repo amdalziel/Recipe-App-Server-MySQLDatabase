@@ -1,12 +1,12 @@
 package com.recipe.recipes;
 
+import com.recipe.ingredients.Ingredient;
+import com.recipe.ingredients.IngredientRepository;
 import com.recipe.users.User;
 import com.recipe.users.UserRepository;
-import com.recipe.users.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

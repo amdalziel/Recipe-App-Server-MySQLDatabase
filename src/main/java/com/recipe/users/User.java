@@ -1,6 +1,6 @@
 package com.recipe.users;
 
-import com.recipe.recipes.Ingredient;
+import com.recipe.ingredients.Ingredient;
 import jakarta.persistence.*;
 
 import java.util.List;
