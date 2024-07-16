@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb01bbec-1f0c-4d60-b88a-e6e6bbf97413" name="Changes" comment="Controller working for Ingredient and RecipeManager (except user ingredient searches)">
+    <list default="true" id="bb01bbec-1f0c-4d60-b88a-e6e6bbf97413" name="Changes" comment="All methods working except findRecipesByIngredientNames">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/IngredientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeManagerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeManagerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/recipes/RecipeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/recipe/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/recipe/users/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +59,20 @@
       <option name="project" value="LOCAL" />
       <updated>1721004347476</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="All methods working except findRecipesByIngredientNames">
+      <option name="closed" value="true" />
+      <created>1721091882747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721091882747</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Controller working for Ingredient and RecipeManager (except user ingredient searches)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller working for Ingredient and RecipeManager (except user ingredient searches)" />
+    <MESSAGE value="All methods working except findRecipesByIngredientNames" />
+    <option name="LAST_COMMIT_MESSAGE" value="All methods working except findRecipesByIngredientNames" />
   </component>
 </project>

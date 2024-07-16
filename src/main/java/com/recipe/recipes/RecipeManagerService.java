@@ -71,7 +71,16 @@ public class RecipeManagerService {
                 .map(Ingredient::getName)
                 .collect(Collectors.toList());
 
-        return recipeRepository.findRecipesByIngredientNames(ingredientNames);
+        List<Recipe> allRecipes = (List<Recipe>) recipeRepository.findAll();
+
+        List<Recipe> matchingRecipes = allRecipes.stream()
+                .filter(recipe -> recipe.getIngredients().stream()
+                        .allMatch(recipeIngredient -> ingredientNames.contains(recipeIngredient.getName())))
+                .collect(Collectors.toList());
+
+
+        return matchingRecipes;
+
     }
 
 
